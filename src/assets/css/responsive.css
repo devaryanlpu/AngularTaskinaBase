@@ -1,0 +1,49 @@
+@media (min-width: 1600px){
+.single-banner-slider{background-size:auto;}
+}
+@media (min-width: 992px) and (max-width: 1199px){
+.xs-menus .nav-menu>li>a{padding:53px 0;}
+.xs-menus .nav-menu>li{margin-right:17px;}
+}
+@media (max-width: 1024px){
+.xs-menus .nav-menu>li>a{padding:15px;}
+.xs-menus .nav-menu>li>a .submenu-indicator-chevron{border-color:transparent #333 #333 transparent;}
+.xs-menus .nav-menu li>.nav-submenu{box-shadow:none;}
+.xs_nav-portrait{position:relative;}
+.xs_nav-portrait .nav-brand{padding:0;display:block;}
+.nav-toggle:before{left:3px;top:8px;}
+.header-transparent .xs-menus .nav-menu>li>a{color:#333;}
+.header-transparent .nav-toggle:before{background-color:#333;box-shadow:0 .5em 0 0 #333333,0 1em 0 0 #333;}
+.banner-title{font-size:2.75rem;}
+.header-transparent{background-color:rgba(255,255,255,.1);}
+.xs-header .xs_nav-portrait{height:75px;}
+.xs_nav-portrait .nav-brand{line-height:75px;min-height:75px;}
+.agency-banner-content{text-align:center;}
+.agency-banner-content.banner-style2{text-align:left;width:60%;margin-left:20px;}
+.agency-banner-content.banner-style2 p{color:#000;}
+.nav-menus-wrapper .nav-menu{padding-right:0;margin-bottom:30px;}
+.nav-menus-wrapper > ul{display:block;}
+.featured-category {
+    padding: 70px 0;
+}
+}
+@media (max-width: 991px){
+.featured-category .BdrRB,.featured-category .BdrR,.featured-category .BdrB{border-bottom:.5px solid #ececec;}
+.featured-category .BdrRB,.featured-category .BdrR{border-right: none}  
+.featured-category .category:nth-child(odd){border-right: .5px solid #ececec;}  
+}
+
+@media (max-width: 767px){
+.agency-banner-content.banner-style2{width:100%;margin-left:0;}
+.featured-category {padding: 50px 0;}    
+.section-title{font-size: 28px;}
+.featured-category .category:nth-child(odd){border-right: none}
+.button-primary{display: block}
+}
+@media (max-width: 480px){
+.agency-banner-content p{margin-bottom:30px;}
+.banner-style2 p br{display:none;}
+}
+@media (max-width: 320px){
+.single-banner-slider{min-height:500px;}
+}

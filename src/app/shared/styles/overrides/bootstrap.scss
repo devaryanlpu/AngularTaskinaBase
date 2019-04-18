@@ -1,0 +1,28 @@
+$input-height: 40px;
+$input-padding: 6px 12px;
+
+html {
+    -webkit-overflow-scrolling: touch;
+}
+.button-primary{
+    color: #fff!important;
+    padding: 6px 50px;
+    position: relative;
+    border: 1px solid rgba(224,36,90,0.11);
+    border-bottom: 4px solid rgba(154,2,46,1);
+    border-radius: 30px;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.15);
+    background-color: rgba(224,36,90,1);
+    transition: all .7s ease 0.02s;
+    font-size: 20px;
+    -webkit-transition: all .35s ease;transition:all .35s ease;
+}
+.button-primary:hover,.button-primary:active,.button-primary:focus{
+    background-color: $primary-hover-color;
+    border: 1px solid $primary-hover-color;
+    border-color:$primary-hover-color;
+    border-bottom: 4px solid $primary-hover-color;
+    box-shadow: none;
+    padding: 6px 60px 6px 60px;
+    -webkit-transition: all .35s ease;transition:all .35s ease;
+}

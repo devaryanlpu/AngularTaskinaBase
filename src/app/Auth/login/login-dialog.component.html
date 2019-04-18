@@ -1,0 +1,60 @@
+<ng-container *ngIf="dialogVisible">
+<div class="modal-content modal-content-width dailogBox ">
+    <div class="modal-body modal-padd">
+       <button type="button" class="close" (click)="hideDialog()">&times;</button>
+       <span class="close-border">&nbsp;</span>
+       <h3 class="modal-title">{{title}}</h3>
+ 
+       <form #f="ngForm" (ngSubmit)="login(f.form.valid)" novalidate autocomplete="off">
+          <div class="group login-modal">
+             <input type="email" 
+                    name="email" 
+                    class="form-control input-email" 
+                    placeholder="Email"
+                    #email="ngModel"
+                    [(ngModel)]="credentials.email"
+                    required email maxlength="256" 
+                   >
+ 
+             <input type="password"
+                    name="password" 
+                    class="form-control input-pass" 
+                    placeholder="Password"
+                    #password="ngModel" 
+                    [(ngModel)]="credentials.password" 
+                    required maxlength="100"
+                    >
+             <p *ngIf="!error">{{error}}</p>
+             <p class="forgot-txt padd-3"><a href="#">Forgot your password ?</a></p>
+             <input type="submit"  class="button-Secondary modal-login-btn" value="Login">
+             <p class="seperator-or padd-1">or login with </p>
+             <div class="social-btn">
+                <a href="" class="social-icons facebook-icon">Facebook</a>&nbsp;
+                <a href="" class="social-icons google-icon">Google</a>
+                <p class="seperator-or padd-2">Already have an Taskina account? </p>
+                <a href="" class="signup-link"  data-target="#SignupModal" data-toggle="modal" (click)="signupDialogLink()">Sign up</a>
+             </div>
+          </div>
+       </form>
+    </div>
+ </div>
+</ng-container>
+ <!-- <ng-container *ngIf="dialogVisible">
+    <p-dialog modal="true" modal="modal" width="auto" ngClass="custom-dialog" [resizable]="false" [closable]="false" [(visible)]="dialogVisible">
+        <p-header ngClsass="popup-header">
+            <h2>External Web Site</h2>
+            <span class="ij icon x-icon" (click)="hideDialog()"></span>
+        </p-header>
+        <article class="dialog-container">
+            <div class="dialog-body">
+                You are about to leave Industry Jump. Are you sure you want to continue? Please take a moment and review the URL below.<br><br>
+                <span class="externalurl">{{externalWebsite}}</span>
+            </div>
+        </article>
+        <p-footer>
+            <button type="button" pButton label="Yes" (click)="onAccept()"></button>
+            <button type="button" pButton label="No" (click)="hideDialog()"></button>
+        </p-footer>
+    </p-dialog>
+</ng-container> -->
+ 

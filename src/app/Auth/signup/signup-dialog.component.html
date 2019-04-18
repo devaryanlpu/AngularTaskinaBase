@@ -1,0 +1,34 @@
+<ng-container *ngIf="dialogVisible">
+<div class="modal-content modal-content-width dailogBox">
+    <div class="modal-body modal-padd">
+      <button type="button" class="close" (click)="hideDialog()">&times;</button>
+      <span class="close-border">&nbsp;</span>
+      <h3 class="modal-title">{{title}}</h3>
+      <form>
+        <div class="group login-modal">
+          <input type="text" name="email" 
+                class="form-control input-email" 
+                placeholder="Email">
+  
+          <input type="password" name="password" 
+                class="form-control input-pass" 
+                placeholder="Password">
+  
+                
+          <p class="login-txt">By signing up, you confirm that you’ve read and accepted our <a href=""
+              class="modal-link">Terms & Conditions</a> and <a href="" class="modal-link">Privacy Policy</a>.</p>
+          <a href="#" class="button-primary">Join Taskina</a>
+          <p class="seperator-or padd-1">or login with </p>
+          <div class="social-btn">
+            <a href="" class="social-icons facebook-icon">Facebook</a>
+            <a href="" class="social-icons google-icon">Google</a>
+            <p class="seperator-or padd-2">Already have an Taskina account? </p>
+            <a href="" class="login-link"  data-target="#LoginModal" data-toggle="modal" (click)="loginDialogLink()">Login</a>
+          </div>
+        </div>
+      </form>
+      <p class="login-guidelines">More info you will found on <br><a href="">Community Guidelines</a> </p>
+    </div>
+  </div>
+</ng-container> 
+  
